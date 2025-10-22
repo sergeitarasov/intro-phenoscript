@@ -10,37 +10,25 @@ In this course, you'll learn to:
 3. Generate natural language descriptions (HTML) from your data
 4. Use Docker to run the conversion pipeline on any computer
 
-## 📋 What You'll Need
-
-- A computer (Windows, Mac, or Linux)
-- Docker installed
-- A text editor
-- Basic command line knowledge (we'll guide you!)
 
 ## 🚀 Quick Start for Students
 
-### Step 1: Get the Course Materials
-```bash
-# Download this repository
-git clone https://github.com/sergeitarasov/intro-phenoscript.git
-cd intro-phenoscript
-```
-
-### Step 2: Install Docker
-- **Windows**: Follow [Windows Setup Guide](docs/SETUP-WINDOWS.md)
-- **Mac**: Follow [Mac Setup Guide](docs/SETUP-MAC.md)
-- **Linux**: Follow [Linux Setup Guide](docs/SETUP-LINUX.md)
-
-### Step 3: Install VS Code + PhenoScript Extension (Optional but Recommended)
-
-For the best editing experience with syntax highlighting and auto-completion:
-
-#### Install VS Code
+### Step 1: Install VS Code
 1. **Download VS Code**: Go to https://code.visualstudio.com/
 2. **Install for your platform**:
    - **Windows**: Download and run the installer
    - **Mac**: Download, unzip, and drag to Applications
    - **Linux**: Follow the installation guide for your distribution
+
+### Step 2: Install VS Code + PhenoScript Extension 
+
+For the best editing experience with syntax highlighting and auto-completion:
+
+### Step 3: Install Docker (Required for conversion to NL)
+- **Windows**: Follow [Windows Setup Guide](docs/SETUP-WINDOWS.md)
+- **Mac**: Follow [Mac Setup Guide](docs/SETUP-MAC.md)
+- **Linux**: Follow [Linux Setup Guide](docs/SETUP-LINUX.md)
+
 
 #### Install PhenoScript Extension
 1. **Open VS Code**
