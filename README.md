@@ -11,7 +11,14 @@ In this course, you'll learn to:
 4. Use Docker to run the conversion pipeline on any computer
 
 
-## 🚀 Quick Start for Students
+### Download Course Materials
+
+2. **On this page, Click the green "Code" button**
+3. **Select "Download ZIP"**
+4. **Extract the ZIP file** to your Desktop or preferred location
+5. **Open the extracted folder** `intro-phenoscript`
+
+
 
 ### Step 1: Install VS Code
 1. **Download VS Code**: Go to https://code.visualstudio.com/
