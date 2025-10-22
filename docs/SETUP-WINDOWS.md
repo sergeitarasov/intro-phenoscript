@@ -58,7 +58,31 @@ docker --version
 ```
 You should see something like: `Docker version 24.0.x`
 
-## Step 4: Test the PhenoScript Pipeline
+## Step 4: Install VS Code + PhenoScript Extension (Optional but Recommended)
+
+### Install Visual Studio Code
+1. Go to https://code.visualstudio.com/
+2. Click **Download for Windows**
+3. Run the installer (`VSCodeUserSetup-x64-x.x.x.exe`)
+4. Follow the installation wizard (use default settings)
+
+### Install PhenoScript Extension
+1. **Open VS Code** from Start menu
+2. **Open Extensions**: Press `Ctrl+Shift+X` or click the Extensions icon in the sidebar
+3. **Search for PhenoScript**: Type "Phenoscript" in the search box
+4. **Install**: Click "Install" on the PhenoScript extension by Sergei Tarasov
+5. **Restart VS Code** if prompted
+
+### Configure PhenoScript
+Follow the detailed configuration guide: https://github.com/sergeitarasov/PhenoScript/wiki/Configure-Phenoscript-VS-Code
+
+**Why use VS Code?**
+- Syntax highlighting for `.phs` files
+- Auto-completion for anatomical terms
+- Better error detection
+- Integrated terminal for Docker commands
+
+## Step 5: Test the PhenoScript Pipeline
 
 ### Navigate to Project Folder
 ```cmd
@@ -83,11 +107,20 @@ explorer output\output-NL
 
 You should see HTML files with natural language descriptions!
 
-## Step 5: Edit Your Species Description
+## Step 6: Edit Your Species Description
 
 ### Open the Description File
+
+#### Using VS Code (Recommended):
+1. **Open VS Code**
+2. **Open Folder**: File → Open Folder → Select `intro-phenoscript` folder
+3. **Navigate to file**: Click `phenotypes/descriptions.phs` in the Explorer panel
+4. **Edit with syntax highlighting** and auto-completion
+5. **Save**: `Ctrl+S`
+
+#### Using Other Text Editors:
 1. Navigate to `phenotypes\descriptions.phs`
-2. Open with any text editor (Notepad, Notepad++, VS Code)
+2. Open with any text editor (Notepad, Notepad++, etc.)
 3. Edit the species description
 4. Save the file
 

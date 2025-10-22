@@ -101,9 +101,14 @@ Think about:
 
 ### Step 3: Edit the Description File
 
-1. Open `phenotypes/descriptions.phs`
-2. Replace the example with your own species
-3. Follow the syntax patterns from the example
+**Recommended**: Use VS Code with the PhenoScript extension for the best editing experience.
+
+1. **Open the project in VS Code**: `code .` (or File → Open Folder)
+2. **Navigate to** `phenotypes/descriptions.phs`
+3. **Replace the example** with your own species description
+4. **Follow the syntax patterns** from the example
+5. **Use auto-completion** (Ctrl+Space) for anatomical terms
+6. **Check for syntax errors** (red underlines indicate issues)
 
 ### Example Template
 
@@ -304,10 +309,11 @@ After writing your description:
 
 ## 🆘 Need Help?
 
-- **Syntax errors**: Check brackets, commas, and parentheses
+- **Syntax errors**: Check brackets, commas, and parentheses (VS Code will highlight these)
 - **Ideas for traits**: Look at the example files for inspiration
-- **Anatomical terms**: Use simple, descriptive terms
+- **Anatomical terms**: Use simple, descriptive terms (VS Code auto-completion helps)
 - **Structure questions**: Follow the nesting patterns in examples
+- **VS Code setup**: See https://github.com/sergeitarasov/PhenoScript/wiki/Configure-Phenoscript-VS-Code
 
 ---
 

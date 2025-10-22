@@ -31,10 +31,38 @@ cd intro-phenoscript
 - **Mac**: Follow [Mac Setup Guide](docs/SETUP-MAC.md)
 - **Linux**: Follow [Linux Setup Guide](docs/SETUP-LINUX.md)
 
-### Step 3: Write Your Species Description
+### Step 3: Install VS Code + PhenoScript Extension (Optional but Recommended)
+
+For the best editing experience with syntax highlighting and auto-completion:
+
+#### Install VS Code
+1. **Download VS Code**: Go to https://code.visualstudio.com/
+2. **Install for your platform**:
+   - **Windows**: Download and run the installer
+   - **Mac**: Download, unzip, and drag to Applications
+   - **Linux**: Follow the installation guide for your distribution
+
+#### Install PhenoScript Extension
+1. **Open VS Code**
+2. **Open Extensions panel**: Click the Extensions icon (squares) in the sidebar or press `Ctrl+Shift+X` (Windows/Linux) or `Cmd+Shift+X` (Mac)
+3. **Search for "Phenoscript"**: Type "Phenoscript" in the search box
+4. **Install the extension**: Click "Install" on the PhenoScript extension by Sergei Tarasov
+5. **Restart VS Code** if prompted
+
+#### Configure PhenoScript in VS Code
+Follow the detailed setup guide: https://github.com/sergeitarasov/PhenoScript/wiki/Configure-Phenoscript-VS-Code
+
+**Benefits of using VS Code + PhenoScript extension:**
+- ✅ **Syntax highlighting** for PhenoScript files
+- ✅ **Auto-completion** for anatomical terms
+- ✅ **Error detection** and syntax checking
+- ✅ **Code folding** for better organization
+- ✅ **Integrated terminal** for running Docker commands
+
+### Step 4: Write Your Species Description
 Edit the file `phenotypes/descriptions.phs` with your own species description
 
-### Step 4: Convert to Natural Language
+### Step 5: Convert to Natural Language
 
 #### Easy Method (Recommended for beginners):
 ```bash

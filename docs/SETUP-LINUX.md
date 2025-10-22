@@ -104,7 +104,61 @@ sudo usermod -aG docker $USER
 docker --version
 ```
 
-## Step 4: Test the PhenoScript Pipeline
+## Step 4: Install VS Code + PhenoScript Extension (Optional but Recommended)
+
+### Install Visual Studio Code
+
+#### Ubuntu/Debian:
+```bash
+# Download and install VS Code
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+sudo apt update
+sudo apt install code
+```
+
+#### CentOS/RHEL/Fedora:
+```bash
+# Add Microsoft repository
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+
+# Install
+sudo yum check-update
+sudo yum install code
+```
+
+#### Alternative: Download from Website
+1. Go to https://code.visualstudio.com/
+2. Download the Linux package (.deb, .rpm, or .tar.gz)
+3. Install according to your distribution
+
+### Install PhenoScript Extension
+```bash
+# Open VS Code
+code
+
+# Or install extension from command line
+code --install-extension sergeitarasov.phenoscript
+```
+
+**Manual Installation:**
+1. **Open VS Code**
+2. **Open Extensions**: Press `Ctrl+Shift+X` or click Extensions icon
+3. **Search**: Type "Phenoscript"
+4. **Install**: Click "Install" on PhenoScript extension by Sergei Tarasov
+
+### Configure PhenoScript
+Follow the detailed configuration guide: https://github.com/sergeitarasov/PhenoScript/wiki/Configure-Phenoscript-VS-Code
+
+**Why use VS Code?**
+- Syntax highlighting for `.phs` files
+- Auto-completion for anatomical terms
+- Better error detection
+- Integrated terminal for Docker commands
+
+## Step 5: Test the PhenoScript Pipeline
 
 ```bash
 # Navigate to project folder
@@ -123,15 +177,26 @@ docker run --rm \
 ls output/output-NL/
 ```
 
-## Step 5: Edit Your Species Description
+## Step 6: Edit Your Species Description
 
+#### Using VS Code (Recommended):
 ```bash
-# Open the file in your preferred editor
+# Open the project in VS Code
+code ~/intro-phenoscript
+
+# Or open specific file
+code phenotypes/descriptions.phs
+```
+
+#### Using Other Editors:
+```bash
+# Terminal editors
 nano phenotypes/descriptions.phs        # Simple terminal editor
 vim phenotypes/descriptions.phs         # Vim editor
+
+# GUI editors
 gedit phenotypes/descriptions.phs       # GNOME text editor
 kate phenotypes/descriptions.phs        # KDE text editor
-code phenotypes/descriptions.phs        # VS Code (if installed)
 ```
 
 ## 🚨 Troubleshooting
