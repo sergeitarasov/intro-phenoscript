@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  phenoscript-student:
+    image: sergeit215/phenoscript-nl-converter:latest
+    container_name: phenoscript-converter
+    volumes:
+      # Mount your phenotypes folder (where you edit descriptions.phs)
+      - ./phenotypes:/app/phenotypes
+      # Mount output folder (where results will appear)
+      - ./student-output:/app/docker-output
+    # Container will automatically run and exit when done

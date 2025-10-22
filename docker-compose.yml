@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  phenoscript-pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: phenoscript-runner
+    volumes:
+      # Mount the docker-output directory to get results back to host
+      - ./docker-output:/app/docker-output
+    environment:
+      - PYTHONUNBUFFERED=1
+    # Override default command if needed
+    # command: make docker-all
+    
+    # Uncomment to run interactively for debugging
+    # stdin_open: true
+    # tty: true
+    # command: /bin/bash
+
+volumes:
+  docker-output:

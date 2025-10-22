@@ -1,0 +1,69 @@
+// PhenoScript Template for Students
+// 
+// Instructions:
+// 1. Replace [YourSpeciesName] with your actual species name
+// 2. Replace [body_part], [trait], [state] with real anatomical descriptions
+// 3. Add more body parts and traits as needed
+// 4. Use the examples in example-Scarabaeus.phs for reference
+// 5. Save this file and run the Docker pipeline
+//
+// Syntax reminders:
+// - Use parentheses () for simple traits: shape(round)
+// - Use braces {} for complex structures with sub-parts
+// - Use COUNT() for quantities: COUNT(2)
+// - Separate traits with commas: shape(round), color(black)
+// - Comments start with // like this line
+
+OTU = { #// OTUName: [YourSpeciesName]
+
+    ANATOMY = {
+        
+        // Main body part 1 (example: head, trunk, etc.)
+        [body_part_1](
+            shape([shape_description]),
+            color([color_description]),
+            texture([texture_description])
+        ),
+        
+        // Main body part 2 with sub-structures
+        [body_part_2] = {
+            
+            // Sub-structure with count
+            [sub_structure_1] = {
+                COUNT([number]),
+                shape([shape_description]),
+                color([color_description])
+            },
+            
+            // Another sub-structure
+            [sub_structure_2](
+                [trait_1]([state_1]),
+                [trait_2]([state_2])
+            )
+        },
+        
+        // Main body part 3 (add more as needed)
+        [body_part_3](
+            [trait_1]([state_1]),
+            [trait_2]([state_2]),
+            
+            // Nested sub-structure
+            [sub_part] = {
+                [trait_3]([state_3])
+            }
+        )
+        
+        // Add more body parts here following the same pattern
+        
+    }
+
+}
+
+// Examples of common anatomical terms you might use:
+//
+// Body parts: head, thorax, abdomen, wing, leg, antenna, eye, mouth
+// Shapes: round, oval, elongated, triangular, cylindrical, flat
+// Colors: black, white, brown, red, blue, green, yellow, orange
+// Textures: smooth, rough, hairy, scaled, spotted, striped
+// Sizes: large, small, medium, tiny, massive
+// Patterns: solid, striped, spotted, mottled, uniform

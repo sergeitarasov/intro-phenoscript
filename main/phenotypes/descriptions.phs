@@ -1,0 +1,29 @@
+
+
+
+OTU = { #// OTUName:  Scarabaeus viettei
+
+#Description based on a non-type male specimen
+
+  DATA = {
+    uberon-male_organism:scarabaeus_viettei[this = True, linksTraits = True, cls = 'uberon-adult_organism', cls = 'dwc-Preserved_Specimen'] .rdfs-label 'org_Scarabaeus viettei';
+    uberon-male_organism:scarabaeus_viettei .dwc-Catalog_Number 'http://id.luomus.fi/GZ.15821';
+    uberon-male_organism:scarabaeus_viettei .ro-has_role_in_modeling cdao-TU .iao-denotes taxrank-species:id-6af39d;
+        
+    taxrank-species:id-6af39d .dwc-Taxon_ID_taxonID 'https://www.gbif.org/species/4997091';
+    taxrank-species:id-6af39d .dwc-Parent_Name_Usage_ID 'https://www.gbif.org/species/9074838';
+    taxrank-species:id-6af39d .rdfs-label 'Scarabaeus viettei';
+    }
+
+
+  TRAITS = {
+    #Body.
+    #Oval shaped;
+    this >> pato-ovate;
+
+    #cuticle black, shiny, antennae reddish brown;
+    this > uberon-chitin-based_cuticle:id-6deb5d >> (pato-black, pato-glistening);
+
+    }
+
+}

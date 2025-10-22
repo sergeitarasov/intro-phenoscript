@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  phenoscript-nl:
+    build:
+      context: .
+      dockerfile: Dockerfile.nl
+    container_name: phenoscript-nl-converter
+    volumes:
+      # Mount the docker-output directory to get results
+      - ./docker-output:/app/docker-output
+      # Optionally mount phenotypes directory if you want to modify input files
+      - ./phenotypes:/app/phenotypes
+    environment:
+      - PYTHONUNBUFFERED=1
+    # Remove container after completion
+    # rm: true
