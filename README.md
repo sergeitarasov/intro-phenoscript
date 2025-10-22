@@ -50,7 +50,9 @@ Edit the file `phenotypes/descriptions.phs` with your own species description
 
 ### Step 5: Convert to Natural Language
 
-#### Open terminal
+The script `run-course.bat` will automatically convert the description and will put the output in the folder `output/output-NL/` where you can find the generated HTML files with your species descriptions.
+
+#### Runn the script
 ```bash
 # Windows: Double-click run-course.bat
 # Or run in Command Prompt: run-course.bat
