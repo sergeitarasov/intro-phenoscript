@@ -22,80 +22,44 @@ In this course, you'll learn to:
 
 ### Step 2: Install VS Code + PhenoScript Extension 
 
-For the best editing experience with syntax highlighting and auto-completion:
-
-### Step 3: Install Docker (Required for conversion to NL)
-- **Windows**: Follow [Windows Setup Guide](docs/SETUP-WINDOWS.md)
-- **Mac**: Follow [Mac Setup Guide](docs/SETUP-MAC.md)
-- **Linux**: Follow [Linux Setup Guide](docs/SETUP-LINUX.md)
-
-
-#### Install PhenoScript Extension
 1. **Open VS Code**
 2. **Open Extensions panel**: Click the Extensions icon (squares) in the sidebar or press `Ctrl+Shift+X` (Windows/Linux) or `Cmd+Shift+X` (Mac)
 3. **Search for "Phenoscript"**: Type "Phenoscript" in the search box
 4. **Install the extension**: Click "Install" on the PhenoScript extension by Sergei Tarasov
 5. **Restart VS Code** if prompted
 
-#### Configure PhenoScript in VS Code
-Follow the detailed setup guide: https://github.com/sergeitarasov/PhenoScript/wiki/Configure-Phenoscript-VS-Code
 
-**Benefits of using VS Code + PhenoScript extension:**
-- ✅ **Syntax highlighting** for PhenoScript files
-- ✅ **Auto-completion** for anatomical terms
-- ✅ **Error detection** and syntax checking
-- ✅ **Code folding** for better organization
-- ✅ **Integrated terminal** for running Docker commands
 
-### Step 4: Write Your Species Description
+### Step 3: Write Your Species Description
 Edit the file `phenotypes/descriptions.phs` with your own species description
+
+
+
+### Step 4: Install Docker and Run it (Required for conversion to NL)
+- **Windows**: Follow [Windows Setup Guide](docs/SETUP-WINDOWS.md)
+- **Mac**: Follow [Mac Setup Guide](docs/SETUP-MAC.md)
+- **Linux**: Follow [Linux Setup Guide](docs/SETUP-LINUX.md)
+
 
 ### Step 5: Convert to Natural Language
 
 #### Easy Method (Recommended for beginners):
 ```bash
-# Mac/Linux: Run the course script
-./run-course.sh
-
 # Windows: Double-click run-course.bat
 # Or run in Command Prompt: run-course.bat
+
+# Mac/Linux: Run the course script
+./run-course.sh
 ```
 
-#### Manual Method:
-```bash
-# Create output folder
-mkdir output
-
-### Using Pre-built Image from Docker Hub
-
-```bash
-# Pull and run the pre-built image
-docker run --rm \
-  -v $(pwd)/phenotypes:/app/phenotypes \
-  -v $(pwd)/output:/app/docker-output \
-  sergeit215/phenoscript-nl-converter:latest
-```
-
-# Check results in output folder
-ls output/
-```
 
 ## 📚 Course Structure
 
-1. **[Introduction to PhenoScript](docs/PHENOSCRIPT-INTRO.md)** - Learn the syntax
-2. **[Writing Species Descriptions](docs/WRITING-DESCRIPTIONS.md)** - Hands-on exercise
-3. **[Running the Pipeline](docs/RUNNING-PIPELINE.md)** - Convert your work
-4. **[Understanding Results](docs/UNDERSTANDING-RESULTS.md)** - Interpret outputs
+1. **[Introduction to PhenoScript](https://github.com/sergeitarasov/PhenoScript/wiki/Introduction-to-Phenoscript-Language)** - Learn the syntax
+2. **[Phenoscript Wiki](https://github.com/sergeitarasov/PhenoScript/wiki)** - Hands-on exercise
+3. **[More examples](https://github.com/g-montanaro/phenoscript_grebennikovius)** - Convert your work
 
-## 🆘 Need Help?
 
-- **Setup Issues**: Check the setup guides in the `docs/` folder
-- **Docker Problems**: See [Docker Troubleshooting](docs/DOCKER-TROUBLESHOOTING.md)
-- **PhenoScript Syntax**: See [PhenoScript Reference](docs/PHENOSCRIPT-REFERENCE.md)
-
-## 🎓 Course Exercise
-
-Your assignment: Describe a species of your choice using PhenoScript syntax, then use the Docker pipeline to generate natural language descriptions. Compare your original description with the generated output!
 
 ---
 
