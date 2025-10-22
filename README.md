@@ -78,6 +78,7 @@ The script `run-course.bat` will automatically convert the description and will 
 1. **[Introduction to PhenoScript](https://github.com/sergeitarasov/PhenoScript/wiki/Introduction-to-Phenoscript-Language)** - Learn the syntax
 2. **[Phenoscript Wiki](https://github.com/sergeitarasov/PhenoScript/wiki)** - Hands-on exercise
 3. **[More examples](https://github.com/g-montanaro/phenoscript_grebennikovius)** - Convert your work
+4. **[Protege to view ontologies (owl files)](https://protege.stanford.edu/)** - Convert your work
 
 
 
