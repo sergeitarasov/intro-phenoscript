@@ -31,7 +31,11 @@ In this course, you'll learn to:
 
 
 ### Step 3: Write Your Species Description
-Edit the file `phenotypes/descriptions.phs` with your own species description
+
+Edit the files: 
+
+- `main/phenotypes/phs-config.yaml` to provide your name and ORCID ID
+- `main/phenotypes/descriptions.phs` to provide the species descriptions
 
 
 
@@ -62,7 +66,7 @@ The script `run-course.bat` will automatically convert the description and will 
 ```
 
 
-## 📚 Course Structure
+## 📚 Extra Links
 
 1. **[Introduction to PhenoScript](https://github.com/sergeitarasov/PhenoScript/wiki/Introduction-to-Phenoscript-Language)** - Learn the syntax
 2. **[Phenoscript Wiki](https://github.com/sergeitarasov/PhenoScript/wiki)** - Hands-on exercise
