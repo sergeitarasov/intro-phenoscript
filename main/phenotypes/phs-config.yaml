@@ -9,7 +9,6 @@
 snippet-dir: ''
 # ADD the names of the authors and ORCID
 authors:
-  'Giulio Montanaro': https://orcid.org/0000-0003-0836-1364
   'Sergei Tarasov': https://orcid.org/0000-0001-5237-2330
 # ADD a short title of your project
 project-title: "New Scarabaeus (Coleoptera: Scarabaeinae) from Madagascar"
