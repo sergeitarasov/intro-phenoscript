@@ -11,7 +11,6 @@ OTU = { #// OTUName:  Scarabaeus viettei
     uberon-male_organism:scarabaeus_viettei .ro-has_role_in_modeling cdao-TU .iao-denotes taxrank-species:id-6af39d;
         
     taxrank-species:id-6af39d .dwc-Taxon_ID_taxonID 'https://www.gbif.org/species/4997091';
-    taxrank-species:id-6af39d .dwc-Parent_Name_Usage_ID 'https://www.gbif.org/species/9074838';
     taxrank-species:id-6af39d .rdfs-label 'Scarabaeus viettei';
     }
 
@@ -27,3 +26,4 @@ OTU = { #// OTUName:  Scarabaeus viettei
     }
 
 }
+
