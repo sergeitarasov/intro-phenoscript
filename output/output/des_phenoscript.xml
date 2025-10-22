@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <Phenoscript xmlns:phs="https://github.com/sergeitarasov/PhenoScript">
 	<phs-config-yaml>
-		<base-iri>https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002</base-iri>
+		<base-iri>https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002</base-iri>
 		<authors>
 			<author name="Giulio Montanaro">https://orcid.org/0000-0003-0836-1364</author>
 			<author name="Sergei Tarasov">https://orcid.org/0000-0001-5237-2330</author>
@@ -27,7 +27,7 @@
 			<phs:otu_properties>
 				<phs:ophu_statement>
 					<phs:triple_node>
-						<phs:node phs:node_id="https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002/scarabaeus_viettei" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+						<phs:node phs:node_id="https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002/scarabaeus_viettei" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
 							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
 							<phs:node_property phs:value="True" phs:var-iri="KeyWord:this" phs:var-label_original="this" phs:var-type_onto="KeyWord" phs:value-iri="KeyWord:True" phs:value-label_original="True" phs:value-type_onto="KeyWord">this</phs:node_property>
 							<phs:node_property phs:value="True" phs:var-iri="KeyWord:linksTraits" phs:var-label_original="linksTraits" phs:var-type_onto="KeyWord" phs:value-iri="KeyWord:True" phs:value-label_original="True" phs:value-type_onto="KeyWord">linksTraits</phs:node_property>
@@ -40,7 +40,7 @@
 				</phs:ophu_statement>
 				<phs:ophu_statement>
 					<phs:triple_node>
-						<phs:node phs:node_id="https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002/scarabaeus_viettei" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+						<phs:node phs:node_id="https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002/scarabaeus_viettei" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
 							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
 						</phs:node>
 						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Catalog_Number" phs:iri="http://rs.tdwg.org/dwc/terms/catalogNumber" phs:label_original="Catalog Number" phs:type_onto="DP"/>
@@ -49,27 +49,27 @@
 				</phs:ophu_statement>
 				<phs:ophu_statement>
 					<phs:triple_node>
-						<phs:node phs:node_id="https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002/scarabaeus_viettei" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+						<phs:node phs:node_id="https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002/scarabaeus_viettei" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
 							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
 						</phs:node>
 						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="ro-has_role_in_modeling" phs:iri="http://purl.obolibrary.org/obo/RO_0003301" phs:label_original="has role in modeling" phs:type_onto="OP"/>
-						<phs:node phs:node_id="https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002/_13a94a_3-3" phs:triple_pos="3" phs:node_name="cdao-TU" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/CDAO_0000138" phs:label_original="TU" phs:type_onto="C">
+						<phs:node phs:node_id="https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002/_583afe_3-3" phs:triple_pos="3" phs:node_name="cdao-TU" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/CDAO_0000138" phs:label_original="TU" phs:type_onto="C">
 							<phs:node_property phs:value="cdao-TU">node_name</phs:node_property>
 						</phs:node>
 					</phs:triple_node>
 					<phs:triple_node>
-						<phs:node phs:node_id="https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002/_13a94a_3-3" phs:triple_pos="1" phs:node_name="cdao-TU" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/CDAO_0000138" phs:label_original="TU" phs:type_onto="C">
+						<phs:node phs:node_id="https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002/_583afe_3-3" phs:triple_pos="1" phs:node_name="cdao-TU" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/CDAO_0000138" phs:label_original="TU" phs:type_onto="C">
 							<phs:node_property phs:value="cdao-TU">node_name</phs:node_property>
 						</phs:node>
 						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="iao-denotes" phs:iri="http://purl.obolibrary.org/obo/IAO_0000219" phs:label_original="denotes" phs:type_onto="OP"/>
-						<phs:node phs:node_id="https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002/id-6af39d" phs:triple_pos="3" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+						<phs:node phs:node_id="https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002/id-6af39d" phs:triple_pos="3" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
 							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
 						</phs:node>
 					</phs:triple_node>
 				</phs:ophu_statement>
 				<phs:ophu_statement>
 					<phs:triple_node>
-						<phs:node phs:node_id="https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002/id-6af39d" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+						<phs:node phs:node_id="https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002/id-6af39d" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
 							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
 						</phs:node>
 						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Taxon_ID_taxonID" phs:iri="http://rs.tdwg.org/dwc/terms/taxonID" phs:label_original="Taxon ID" phs:type_onto="DP"/>
@@ -78,7 +78,7 @@
 				</phs:ophu_statement>
 				<phs:ophu_statement>
 					<phs:triple_node>
-						<phs:node phs:node_id="https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002/id-6af39d" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+						<phs:node phs:node_id="https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002/id-6af39d" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
 							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
 						</phs:node>
 						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Parent_Name_Usage_ID" phs:iri="http://rs.tdwg.org/dwc/terms/parentNameUsageID" phs:label_original="Parent Name Usage ID" phs:type_onto="DP"/>
@@ -87,7 +87,7 @@
 				</phs:ophu_statement>
 				<phs:ophu_statement>
 					<phs:triple_node>
-						<phs:node phs:node_id="https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002/id-6af39d" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+						<phs:node phs:node_id="https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002/id-6af39d" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
 							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
 						</phs:node>
 						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="rdfs-label" phs:iri="http://www.w3.org/2000/01/rdf-schema#label" phs:label_original="label" phs:type_onto="AP"/>
@@ -98,35 +98,35 @@
 			<phs:ophu_list>
 				<phs:ophu_statement>
 					<phs:triple_node>
-						<phs:node phs:node_id="https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002/_13a94a_7-1" phs:triple_pos="1" phs:node_name="this" phs:fromNegativeEdge="False" phs:iri="KeyWord:this" phs:label_original="this" phs:type_onto="KeyWord">
+						<phs:node phs:node_id="https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002/_583afe_7-1" phs:triple_pos="1" phs:node_name="this" phs:fromNegativeEdge="False" phs:iri="KeyWord:this" phs:label_original="this" phs:type_onto="KeyWord">
 							<phs:node_property phs:value="this">node_name</phs:node_property>
 						</phs:node>
 						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="_gg_" phs:iri="http://purl.obolibrary.org/obo/RO_0000053" phs:label_original="has characteristic" phs:type_onto="OP"/>
-						<phs:node phs:node_id="https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002/_13a94a_7-3" phs:triple_pos="3" phs:node_name="pato-ovate" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/PATO_0001891" phs:label_original="ovate" phs:type_onto="C">
+						<phs:node phs:node_id="https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002/_583afe_7-3" phs:triple_pos="3" phs:node_name="pato-ovate" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/PATO_0001891" phs:label_original="ovate" phs:type_onto="C">
 							<phs:node_property phs:value="pato-ovate">node_name</phs:node_property>
 						</phs:node>
 					</phs:triple_node>
 				</phs:ophu_statement>
 				<phs:ophu_statement>
 					<phs:triple_node>
-						<phs:node phs:node_id="https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002/_13a94a_8-1" phs:triple_pos="1" phs:node_name="this" phs:fromNegativeEdge="False" phs:iri="KeyWord:this" phs:label_original="this" phs:type_onto="KeyWord">
+						<phs:node phs:node_id="https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002/_583afe_8-1" phs:triple_pos="1" phs:node_name="this" phs:fromNegativeEdge="False" phs:iri="KeyWord:this" phs:label_original="this" phs:type_onto="KeyWord">
 							<phs:node_property phs:value="this">node_name</phs:node_property>
 						</phs:node>
 						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="_g_" phs:iri="http://purl.obolibrary.org/obo/BFO_0000051" phs:label_original="has part" phs:type_onto="OP"/>
-						<phs:node phs:node_id="https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002/id-6deb5d" phs:triple_pos="3" phs:node_name="uberon-chitin-based_cuticle" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0001001" phs:label_original="chitin-based cuticle" phs:type_onto="C">
+						<phs:node phs:node_id="https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002/id-6deb5d" phs:triple_pos="3" phs:node_name="uberon-chitin-based_cuticle" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0001001" phs:label_original="chitin-based cuticle" phs:type_onto="C">
 							<phs:node_property phs:value="uberon-chitin-based_cuticle">node_name</phs:node_property>
 						</phs:node>
 					</phs:triple_node>
 					<phs:triple_node>
-						<phs:node phs:node_id="https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002/id-6deb5d" phs:triple_pos="1" phs:node_name="uberon-chitin-based_cuticle" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0001001" phs:label_original="chitin-based cuticle" phs:type_onto="C">
+						<phs:node phs:node_id="https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002/id-6deb5d" phs:triple_pos="1" phs:node_name="uberon-chitin-based_cuticle" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0001001" phs:label_original="chitin-based cuticle" phs:type_onto="C">
 							<phs:node_property phs:value="uberon-chitin-based_cuticle">node_name</phs:node_property>
 						</phs:node>
 						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="_gg_" phs:iri="http://purl.obolibrary.org/obo/RO_0000053" phs:label_original="has characteristic" phs:type_onto="OP"/>
 						<phs:list_node phs:triple_pos="3">
-							<phs:node phs:node_id="https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002/_13a94a_8-L5-1" phs:triple_pos="NO" phs:node_name="pato-black" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/PATO_0000317" phs:label_original="black" phs:type_onto="C">
+							<phs:node phs:node_id="https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002/_583afe_8-L5-1" phs:triple_pos="NO" phs:node_name="pato-black" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/PATO_0000317" phs:label_original="black" phs:type_onto="C">
 								<phs:node_property phs:value="pato-black">node_name</phs:node_property>
 							</phs:node>
-							<phs:node phs:node_id="https://data.phenoscript.org/3be8e080-af15-11f0-93e4-0242ac110002/_13a94a_8-L5-2" phs:triple_pos="NO" phs:node_name="pato-glistening" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/PATO_0001373" phs:label_original="glistening" phs:type_onto="C">
+							<phs:node phs:node_id="https://data.phenoscript.org/0f11bd0a-af17-11f0-aa24-0242ac110002/_583afe_8-L5-2" phs:triple_pos="NO" phs:node_name="pato-glistening" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/PATO_0001373" phs:label_original="glistening" phs:type_onto="C">
 								<phs:node_property phs:value="pato-glistening">node_name</phs:node_property>
 							</phs:node>
 						</phs:list_node>
