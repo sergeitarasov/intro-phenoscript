@@ -69,16 +69,16 @@ cd Desktop\intro-phenoscript
 ### Run the Docker Container
 ```cmd
 # Create output folder
-mkdir student-output
+mkdir output
 
 # Run the PhenoScript pipeline
-docker run --rm -v %cd%/phenotypes:/app/phenotypes -v %cd%/student-output:/app/docker-output sergeit215/phenoscript-nl-converter:latest
+docker run --rm -v %cd%/phenotypes:/app/phenotypes -v %cd%/output:/app/docker-output sergeit215/phenoscript-nl-converter:latest
 ```
 
 ### Check Results
 ```cmd
 # Open the output folder
-explorer student-output\output-NL
+explorer output\output-NL
 ```
 
 You should see HTML files with natural language descriptions!
@@ -94,10 +94,10 @@ You should see HTML files with natural language descriptions!
 ### Run Again with Your Changes
 ```cmd
 # Run the pipeline again
-docker run --rm -v %cd%/phenotypes:/app/phenotypes -v %cd%/student-output:/app/docker-output sergeit215/phenoscript-nl-converter:latest
+docker run --rm -v %cd%/phenotypes:/app/phenotypes -v %cd%/output:/app/docker-output sergeit215/phenoscript-nl-converter:latest
 
 # View your new results
-explorer student-output\output-NL
+explorer output\output-NL
 ```
 
 ## 🚨 Troubleshooting
@@ -141,7 +141,7 @@ Desktop\intro-phenoscript\
 │   ├── descriptions.phs          ← Edit this file!
 │   ├── example-Scarabaeus.phs
 │   └── phs-config.yaml
-├── student-output\               ← Your results appear here
+├── output\                       ← Your results appear here
 │   ├── output-NL\               ← HTML descriptions
 │   └── output\                  ← OWL files
 ├── docs\                        ← Course documentation

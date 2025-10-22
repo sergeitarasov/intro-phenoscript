@@ -125,7 +125,7 @@ ls phenotypes/
 **Linux - Output files owned by root:**
 ```bash
 # Fix ownership after running Docker
-sudo chown -R $(whoami):$(whoami) student-output/
+sudo chown -R $(whoami):$(whoami) output/
 
 # Or run Docker with your user ID
 docker run --rm -u $(id -u):$(id -g) -v $(pwd)/phenotypes:/app/phenotypes ...

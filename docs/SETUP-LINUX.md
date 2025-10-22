@@ -111,16 +111,16 @@ docker --version
 cd ~/intro-phenoscript
 
 # Create output folder
-mkdir -p student-output
+mkdir -p output
 
 # Run the PhenoScript pipeline
 docker run --rm \
   -v $(pwd)/phenotypes:/app/phenotypes \
-  -v $(pwd)/student-output:/app/docker-output \
+  -v $(pwd)/output:/app/docker-output \
   sergeit215/phenoscript-nl-converter:latest
 
 # Check results
-ls student-output/output-NL/
+ls output/output-NL/
 ```
 
 ## Step 5: Edit Your Species Description

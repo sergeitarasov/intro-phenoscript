@@ -7,19 +7,19 @@ After running the PhenoScript pipeline, you'll get natural language descriptions
 ## 📁 Output Files Explained
 
 ### Main Output File
-**`student-output/output-NL/org_[YourSpeciesName].html`**
+**`output/output-NL/org_[YourSpeciesName].html`**
 - This is your **main result** - a natural language description
 - Opens in any web browser
 - Contains structured, scientific language
 - Organized by anatomical features
 
 ### Supporting Files
-**`student-output/output/des_phenoscript.owl`**
+**`output/output/des_phenoscript.owl`**
 - The OWL ontology (knowledge graph) of your species
 - Machine-readable format
 - Can be imported into ontology editors
 
-**`student-output/output/des_phenoscript.xml`**
+**`output/output/des_phenoscript.xml`**
 - Intermediate XML representation
 - Shows the structural parsing of your PhenoScript
 

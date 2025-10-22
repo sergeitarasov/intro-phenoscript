@@ -43,7 +43,7 @@ fi
 echo "✅ Found descriptions.phs"
 
 # Create output directory
-mkdir -p student-output
+mkdir -p output
 echo "✅ Created output directory"
 
 echo ""
@@ -53,7 +53,7 @@ echo "This may take a minute to download the Docker image on first run..."
 # Run the Docker container
 docker run --rm \
     -v "$(pwd)/phenotypes:/app/phenotypes" \
-    -v "$(pwd)/student-output:/app/docker-output" \
+    -v "$(pwd)/output:/app/docker-output" \
     sergeit215/phenoscript-nl-converter:latest
 
 # Check if conversion succeeded
@@ -62,21 +62,21 @@ if [ $? -eq 0 ]; then
     echo "🎉 Conversion completed successfully!"
     echo ""
     echo "📁 Your results are in:"
-    echo "   - student-output/output-NL/     (HTML natural language descriptions)"
-    echo "   - student-output/output/        (OWL ontology files)"
+    echo "   - output/output-NL/     (HTML natural language descriptions)"
+    echo "   - output/output/        (OWL ontology files)"
     echo ""
     
     # Try to open results automatically
     if command -v open > /dev/null; then
         # macOS
         echo "🌐 Opening results in Finder..."
-        open student-output/output-NL/
+        open output/output-NL/
     elif command -v xdg-open > /dev/null; then
         # Linux
         echo "🌐 Opening results in file manager..."
-        xdg-open student-output/output-NL/
+        xdg-open output/output-NL/
     else
-        echo "💡 Open student-output/output-NL/ to see your results"
+        echo "💡 Open output/output-NL/ to see your results"
     fi
     
     echo ""

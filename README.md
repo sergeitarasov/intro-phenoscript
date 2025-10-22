@@ -47,15 +47,21 @@ Edit the file `phenotypes/descriptions.phs` with your own species description
 
 #### Manual Method:
 ```bash
-# Run the conversion using Docker
+# Create output folder
+mkdir output
+
+### Using Pre-built Image from Docker Hub
+
+```bash
+# Pull and run the pre-built image
 docker run --rm \
   -v $(pwd)/phenotypes:/app/phenotypes \
-  -v $(pwd)/student-output:/app/docker-output \
+  -v $(pwd)/output:/app/docker-output \
   sergeit215/phenoscript-nl-converter:latest
+```
 
-# Check your results
-open student-output/output-NL/  # Mac
-explorer student-output\output-NL\  # Windows
+# Check results in output folder
+ls output/
 ```
 
 ## 📚 Course Structure

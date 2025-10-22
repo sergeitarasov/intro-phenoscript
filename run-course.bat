@@ -47,7 +47,7 @@ if not exist "phenotypes\descriptions.phs" (
 echo ✅ Found descriptions.phs
 
 REM Create output directory
-if not exist "student-output" mkdir "student-output"
+if not exist "output" mkdir "output"
 echo ✅ Created output directory
 
 echo.
@@ -55,7 +55,7 @@ echo 🚀 Starting conversion...
 echo This may take a minute to download the Docker image on first run...
 
 REM Run the Docker container
-docker run --rm -v "%cd%/phenotypes:/app/phenotypes" -v "%cd%/student-output:/app/docker-output" sergeit215/phenoscript-nl-converter:latest
+docker run --rm -v "%cd%/phenotypes:/app/phenotypes" -v "%cd%/output:/app/docker-output" sergeit215/phenoscript-nl-converter:latest
 
 REM Check if conversion succeeded
 if %errorlevel% equ 0 (
@@ -63,13 +63,13 @@ if %errorlevel% equ 0 (
     echo 🎉 Conversion completed successfully!
     echo.
     echo 📁 Your results are in:
-    echo    - student-output\output-NL\     (HTML natural language descriptions^)
-    echo    - student-output\output\        (OWL ontology files^)
+    echo    - output\output-NL\     (HTML natural language descriptions^)
+    echo    - output\output\        (OWL ontology files^)
     echo.
     
     REM Try to open results automatically
     echo 🌐 Opening results in Explorer...
-    explorer "student-output\output-NL"
+    explorer "output\output-NL"
     
     echo.
     echo 📖 To modify your description:

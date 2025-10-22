@@ -8,5 +8,5 @@ services:
       # Mount your phenotypes folder (where you edit descriptions.phs)
       - ./phenotypes:/app/phenotypes
       # Mount output folder (where results will appear)
-      - ./student-output:/app/docker-output
+      - ./output:/app/docker-output
     # Container will automatically run and exit when done

@@ -17,12 +17,12 @@ mkdir -p student-output
 # Run the conversion
 docker run --rm \
   -v $(pwd)/phenotypes:/app/phenotypes \
-  -v $(pwd)/student-output:/app/docker-output \
+  -v $(pwd)/output:/app/docker-output \
   sergeit215/phenoscript-nl-converter:latest
 
 # View results
-open student-output/output-NL/    # Mac
-xdg-open student-output/output-NL/  # Linux
+open output/output-NL/    # Mac
+xdg-open output/output-NL/  # Linux
 ```
 
 ### For Windows:
@@ -31,13 +31,13 @@ xdg-open student-output/output-NL/  # Linux
 cd Desktop\intro-phenoscript
 
 # Create output directory
-mkdir student-output
+mkdir output
 
 # Run the conversion
-docker run --rm -v %cd%/phenotypes:/app/phenotypes -v %cd%/student-output:/app/docker-output sergeit215/phenoscript-nl-converter:latest
+docker run --rm -v %cd%/phenotypes:/app/phenotypes -v %cd%/output:/app/docker-output sergeit215/phenoscript-nl-converter:latest
 
 # View results
-explorer student-output\output-NL
+explorer output\output-NL
 ```
 
 ## Method 2: Using Docker Compose (Alternative)
@@ -49,9 +49,9 @@ If you prefer using Docker Compose:
 docker-compose -f docker-compose.student.yml up
 
 # View results
-open student-output/output-NL/    # Mac
-explorer student-output\output-NL  # Windows
-xdg-open student-output/output-NL/  # Linux
+open output/output-NL/    # Mac
+explorer output\output-NL  # Windows
+xdg-open output/output-NL/  # Linux
 ```
 
 ## 📊 What Happens During Conversion
@@ -92,7 +92,7 @@ NL output directories copied to docker-output/
 After successful conversion, you'll find:
 
 ```
-student-output/
+output/
 ├── output-NL/
 │   └── org_[YourSpeciesName].html    ← Natural language description!
 └── output/
@@ -178,10 +178,10 @@ The pipeline is designed to be run multiple times. Each run overwrites previous 
 Try creating multiple versions:
 ```bash
 # Run once
-docker run --rm -v $(pwd)/phenotypes:/app/phenotypes -v $(pwd)/version1:/app/docker-output sergeit215/phenoscript-nl-converter:latest
+docker run --rm -v $(pwd)/phenotypes:/app/phenotypes -v $(pwd)/output-v1:/app/docker-output sergeit215/phenoscript-nl-converter:latest
 
 # Edit descriptions.phs, then run again
-docker run --rm -v $(pwd)/phenotypes:/app/phenotypes -v $(pwd)/version2:/app/docker-output sergeit215/phenoscript-nl-converter:latest
+docker run --rm -v $(pwd)/phenotypes:/app/phenotypes -v $(pwd)/output-v2:/app/docker-output sergeit215/phenoscript-nl-converter:latest
 
 # Compare version1/ and version2/ results
 ```
@@ -198,8 +198,8 @@ docker run --rm -v $(pwd)/phenotypes:/app/phenotypes -v $(pwd)/version2:/app/doc
 
 You've successfully run the pipeline when:
 - [ ] Docker command completes without errors
-- [ ] `student-output/` directory is created
-- [ ] HTML file appears in `output-NL/`
+- [ ] `output/` directory is created
+- [ ] HTML file appears in `output/output-NL/`
 - [ ] HTML file opens in browser and shows readable text
 - [ ] Generated description matches your input species
 
