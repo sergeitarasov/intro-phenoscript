@@ -36,14 +36,21 @@ Edit the file `phenotypes/descriptions.phs` with your own species description
 
 
 ### Step 4: Install Docker and Run it (Required for conversion to NL)
-- **Windows**: Follow [Windows Setup Guide](docs/SETUP-WINDOWS.md)
-- **Mac**: Follow [Mac Setup Guide](docs/SETUP-MAC.md)
-- **Linux**: Follow [Linux Setup Guide](docs/SETUP-LINUX.md)
+
+#### All Platforms:
+1. **Go to**: https://www.docker.com/get-started/
+2. **Click**: "Download Docker Desktop"
+3. **Select your platform**: Windows, Mac, or Linux
+4. **Download and run** the installer
+5. **Follow the setup wizard** (use default settings)
+6. **Restart your computer** if prompted
+7. **Start Docker Desktop** from your applications
+8. **Wait for Docker to start** (whale icon appears in system tray/menu bar)
 
 
 ### Step 5: Convert to Natural Language
 
-#### Easy Method (Recommended for beginners):
+#### Open terminal
 ```bash
 # Windows: Double-click run-course.bat
 # Or run in Command Prompt: run-course.bat
